@@ -156,8 +156,10 @@
                                             <label for="message">Message</label>
                                         </div>
                                     </div>
-                                    <input type="hidden" name="_next"
-                                        value="https://richierichmoc.github.io/TTL_LOCs/contact.html">
+                                    <input type="hidden" name="_next" id="nextUrl">
+                                    <script>
+                                        document.getElementById('nextUrl').value = window.location.href;
+                                    </script>
                                     <input type="hidden" name="_subject" value="New Contact Message - TTL LOCS">
                                     <input type="hidden" name="_captcha" value="false">
                                     <div class="col-12">
